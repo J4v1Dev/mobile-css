@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.mobile{
+  width: 300px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 20px;
+  /*background: linear-gradient(300deg, grey , black ,grey);*/
+  background-color: #333033;
+  margin: auto;
+  padding: 1rem;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 1fr 30px;
+  justify-content: center;
+}
+
+.screen{
+  display: grid;
+  grid-template-rows: 20px 60px 1fr 1fr;
+  background-color: #378cbd;
+  gap: 1rem;
+
+  & > div{
+    background: grey;
+  }
+}
+
+
+
+
+
+.bottomscreen{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5rem;
+
+  & > div{
+    background-color: rgb(221, 221, 107);
+  }
+}
