@@ -6,8 +6,8 @@ body {
 }
 
 .mobile{
-  width: 300px;
-  height: 500px;
+  width: 290px;
+  height: 600px;
   border: 2px solid black;
   border-radius: 20px;
   background: linear-gradient(300deg, grey , #1d1c1c ,grey);
@@ -104,7 +104,52 @@ body {
   }
 }
 
+.middle1screen{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 
+  & .date{
+    margin-left: 10px;
+    & p:nth-of-type(1){
+      font-family: var(--font);
+      font-size: 30px;
+      margin:0;
+      color:#ffffff;
+    }
+
+    & p:nth-of-type(2){
+      font-family: var(--font);
+      font-size: 10px;
+      margin: 0;
+      color:#ffffff;
+    }
+  }
+
+  & .separate{
+    width: 2px;
+    height: 40px;
+    background-color: #fff5;
+  }
+
+  & .weather{
+
+    & .nublado{
+      margin-left: 35px;
+    }
+
+    & p{
+      font-family: var(--font);
+      font-size: 10px;
+      margin: 0;
+      margin-right: 20px;
+      color:#d7ce18;
+    }
+  }
+}
 
 
 .bottomscreen{
